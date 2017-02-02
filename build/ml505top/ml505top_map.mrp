@@ -1,0 +1,1616 @@
+Release 14.6 Map P.68d (lin64)
+Xilinx Mapping Report File for Design 'ml505top'
+
+Design Information
+------------------
+Command Line   : map -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off
+-pr off -lc off -power off -p xc5vlx110t-ff1136-1 -o ml505top_map.ncd ml505top.ngd ml505top.pcf 
+Target Device  : xc5vlx110t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Tue Dec  9 11:23:29 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   55
+Slice Logic Utilization:
+  Number of Slice Registers:                 4,765 out of  69,120    6%
+    Number used as Flip Flops:               4,595
+    Number used as Latches:                    170
+  Number of Slice LUTs:                      6,756 out of  69,120    9%
+    Number used as logic:                    6,715 out of  69,120    9%
+      Number using O6 output only:           6,485
+      Number using O5 output only:             156
+      Number using O5 and O6:                   74
+    Number used as Memory:                      20 out of  17,920    1%
+      Number used as Shift Register:            20
+        Number using O6 output only:            20
+    Number used as exclusive route-thru:        21
+  Number of route-thrus:                       179
+    Number using O6 output only:               176
+    Number using O5 output only:                 2
+    Number using O5 and O6:                      1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 3,316 out of  17,280   19%
+  Number of LUT Flip Flop pairs used:        8,952
+    Number with an unused Flip Flop:         4,187 out of   8,952   46%
+    Number with an unused LUT:               2,196 out of   8,952   24%
+    Number of fully used LUT-FF pairs:       2,569 out of   8,952   28%
+    Number of unique control sets:             468
+    Number of slice register sites lost
+      to control set restrictions:           1,055 out of  69,120    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       126 out of     640   19%
+    Number of LOCed IOBs:                      126 out of     126  100%
+    IOB Flip Flops:                            265
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      35 out of     148   23%
+    Number using BlockRAM only:                 23
+    Number using FIFO only:                     12
+    Total primitives used:
+      Number of 36k BlockRAM used:              20
+      Number of 18k BlockRAM used:               4
+      Number of 36k FIFO used:                  12
+    Total Memory used (KB):                  1,224 out of   5,328   22%
+  Number of BUFG/BUFGCTRLs:                      8 out of      32   25%
+    Number used as BUFGs:                        8
+  Number of IDELAYCTRLs:                         3 out of      22   13%
+  Number of BUFIOs:                              8 out of      80   10%
+  Number of PLL_ADVs:                            1 out of       6   16%
+
+Average Fanout of Non-Clock Nets:                3.98
+
+Peak Memory Usage:  1217 MB
+Total REAL time to MAP completion:  2 mins 14 secs 
+Total CPU time to MAP completion:   2 mins 14 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   CPU/Bmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/TRU
+   E_DP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/dcache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram
+   .r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKU connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP
+   of frag RDRCLKL connected to power/ground net
+   mem_arch/icache/cache_data2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ra
+   m.r/v5_noinit.ram/SDP.WIDE_PRIM36.noeccerr.SDP_RDRCLKL_tiesig
+WARNING:Timing:3223 - Timing constraint TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY
+   FROM TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO TIMEGRP "RAMS" TS_USER_CLK * 4
+   ignored during timing analysis.
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: GPIO_LED<0>   IOSTANDARD = LVCMOS25
+   	 Comp: GPIO_LED<1>   IOSTANDARD = LVCMOS25
+   	 Comp: GPIO_LED<2>   IOSTANDARD = LVCMOS25
+   	 Comp: GPIO_LED<3>   IOSTANDARD = SSTL18_II_DCI
+   	 Comp: GPIO_LED<4>   IOSTANDARD = LVCMOS25
+   	 Comp: GPIO_LED<5>   IOSTANDARD = SSTL18_II_DCI
+   	 Comp: GPIO_LED<6>   IOSTANDARD = SSTL18_II_DCI
+   	 Comp: GPIO_LED<7>   IOSTANDARD = SSTL18_II_DCI
+
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_arch/dcache/read_miss1 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_arch/dcache/read_miss2 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_arch/icache/read_miss1 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_arch/icache/read_miss2 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net CPU/controller/ALUop_not0001 is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network N2017 has no load.
+INFO:LIT:395 - The above info message is repeated 23 more times for the
+   following (max. 5 shown):
+   N2018,
+   N2019,
+   N2020,
+   N2021,
+   N2022
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:950 - SAVE has been detected on block
+   "mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/gen_odt_ddr2.
+   gen_odt[0].u_ff_odt"
+INFO:MapLib:950 - SAVE has been detected on block
+   "mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/gen_cke[0].u_
+   ff_cke"
+INFO:MapLib:950 - SAVE has been detected on block
+   "mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/gen_cs_n[0]..
+   u_ff_cs_n"
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV user_clk_pll.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more
+   information, see the TSI report.  Please consult the Xilinx Command Line
+   Tools User Guide for information on generating a TSI report.
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 154 block(s) removed
+  21 block(s) optimized away
+ 135 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "clkdiv50_buf" (CKBUF) removed.
+ The signal "clk50" is loadless and has been removed.
+Loadless block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[1].u_calib_rden_r" (SFF) removed.
+ The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl
+_out<1>" is loadless and has been removed.
+Loadless block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[2].u_calib_rden_r" (SFF) removed.
+ The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl
+_out<2>" is loadless and has been removed.
+Loadless block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[3].u_calib_rden_r" (SFF) removed.
+ The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl
+_out<3>" is loadless and has been removed.
+Loadless block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[4].u_calib_rden_r" (SFF) removed.
+ The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl
+_out<4>" is loadless and has been removed.
+Loadless block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[5].u_calib_rden_r" (SFF) removed.
+ The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl
+_out<5>" is loadless and has been removed.
+Loadless block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[6].u_calib_rden_r" (SFF) removed.
+ The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl
+_out<6>" is loadless and has been removed.
+Loadless block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[7].u_calib_rden_r" (SFF) removed.
+ The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_srl
+_out<7>" is loadless and has been removed.
+The signal "mem_arch/icache/cache_tag/doutb<23>" is sourceless and has been
+removed.
+The signal "mem_arch/icache/cache_tag/doutb<22>" is sourceless and has been
+removed.
+The signal "mem_arch/icache/cache_tag/doutb<21>" is sourceless and has been
+removed.
+The signal "mem_arch/icache/cache_tag2/doutb<23>" is sourceless and has been
+removed.
+The signal "mem_arch/icache/cache_tag2/doutb<22>" is sourceless and has been
+removed.
+The signal "mem_arch/icache/cache_tag2/doutb<21>" is sourceless and has been
+removed.
+The signal "mem_arch/dcache/cache_tag/doutb<23>" is sourceless and has been
+removed.
+The signal "mem_arch/dcache/cache_tag/doutb<22>" is sourceless and has been
+removed.
+The signal "mem_arch/dcache/cache_tag/doutb<21>" is sourceless and has been
+removed.
+The signal "mem_arch/dcache/cache_tag2/doutb<23>" is sourceless and has been
+removed.
+The signal "mem_arch/dcache/cache_tag2/doutb<22>" is sourceless and has been
+removed.
+The signal "mem_arch/dcache/cache_tag2/doutb<21>" is sourceless and has been
+removed.
+The signal "mem_arch/ddr2_read_fifo/full" is sourceless and has been removed.
+The signal "mem_arch/ddr2_read_fifo/empty" is sourceless and has been removed.
+The signal "mem_arch/ddr2_write_fifo/empty" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N1887" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_12_mux000011_F" (ROM) removed.
+The signal "N1888" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_12_mux000011_G" (ROM) removed.
+The signal "N703" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_35_mux0000_SW0" (ROM) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<35>" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_35" (SFF) removed.
+    The signal "mem_arch/ddr2/u_ddr2_infrastructure/rstdiv0_sync_r_11_3" is unused
+and has been removed.
+     Unused block "mem_arch/ddr2/u_ddr2_infrastructure/rstdiv0_sync_r_11_3" (FF)
+removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/N109" is
+unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_12_mux000011" (MUX) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/N127" is
+unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_18_mux000011" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<10>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_10" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_10_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_10_mux00002" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<11>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_11" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_11_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_11_mux00002" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<12>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_12" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_12_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_12_mux00002" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<13>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_13" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_13_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_13_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<14>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_14" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_14_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_14_mux00002" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<15>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_15" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_15_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_15_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<16>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_16" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_16_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_16_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<17>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_17" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_17_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_17_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<18>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_18" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_18_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_18_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<19>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_19" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_19_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_19_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<20>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_20" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_20_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_20_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<21>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_21" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_21_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_21_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<22>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_22" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_22_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_22_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<23>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_23" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_23_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_23_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<24>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_24" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_24_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_24_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<25>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_25" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_25_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_25_mux0000" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<26>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_26" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_26_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_26_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<27>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_27" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_27_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_27_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<28>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_28" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_28_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_28_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<29>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_29" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_29_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_29_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<30>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_30" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_30_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_30_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<31>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_31" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_31_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_31_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<32>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_32" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_32_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_32_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<33>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_33" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_33_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_33_mux00001_f7" (MUX) removed.
+    The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_33_mux000011" is unused and has been removed.
+     Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_33_mux000012" (ROM) removed.
+    The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_33_mux00001" is unused and has been removed.
+     Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_33_mux000011" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<34>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_34" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_34_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_34_mux000069" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<36>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_36" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_36_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_36_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<37>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_37" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_37_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_37_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<38>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_38" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_38_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_38_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<39>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_39" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_39_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_39_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<5>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_5" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_5_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_5_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<6>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_6" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_6_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_6_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<7>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_7" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_7_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_7_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<8>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_8" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_8_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_8_mux00001" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+<9>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_9" (SFF) removed.
+  The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_9_mux0000" is unused and has been removed.
+   Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_9_mux0000" (ROM) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<10>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[10].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<11>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[11].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<12>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[12].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<13>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[13].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<14>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[14].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<15>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[15].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<16>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[16].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<17>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[17].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<18>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[18].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<19>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[19].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<20>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[20].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<21>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[21].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<22>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[22].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<23>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[23].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<24>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[24].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<25>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[25].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<26>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[26].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<27>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[27].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<28>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[28].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<29>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[29].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<30>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[30].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<31>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[31].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<32>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[32].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<33>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[33].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<34>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[34].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<35>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[35].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<36>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[36].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<37>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[37].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<38>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[38].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<39>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[39].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<5>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[5].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<6>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[6].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<7>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[7].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<8>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[8].u_ff_rden_dly" (SFF) removed.
+The signal
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/rden_dly
+_r<9>" is unused and has been removed.
+ Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+_dly[9].u_ff_rden_dly" (SFF) removed.
+Unused block "CPU/Bmem/GND" (ZERO) removed.
+Unused block "CPU/Bmem/VCC" (ONE) removed.
+Unused block "mem_arch/dcache/cache_data/GND" (ZERO) removed.
+Unused block "mem_arch/dcache/cache_data/VCC" (ONE) removed.
+Unused block "mem_arch/dcache/cache_data2/GND" (ZERO) removed.
+Unused block "mem_arch/dcache/cache_data2/VCC" (ONE) removed.
+Unused block "mem_arch/dcache/cache_tag/GND" (ZERO) removed.
+Unused block "mem_arch/dcache/cache_tag/VCC" (ONE) removed.
+Unused block "mem_arch/dcache/cache_tag2/GND" (ZERO) removed.
+Unused block "mem_arch/dcache/cache_tag2/VCC" (ONE) removed.
+Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[1].u_rden_srl" (SRLC32E) removed.
+Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[2].u_rden_srl" (SRLC32E) removed.
+Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[3].u_rden_srl" (SRLC32E) removed.
+Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[4].u_rden_srl" (SRLC32E) removed.
+Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[5].u_rden_srl" (SRLC32E) removed.
+Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[6].u_rden_srl" (SRLC32E) removed.
+Unused block
+"mem_arch/ddr2/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rden
+[7].u_rden_srl" (SRLC32E) removed.
+Unused block "mem_arch/ddr2_addr_fifo/GND" (ZERO) removed.
+Unused block "mem_arch/ddr2_addr_fifo/VCC" (ONE) removed.
+Unused block "mem_arch/ddr2_read_fifo/BU2/U0/gbiv5.bi/v5_fifo.fblk/empty_i1"
+(ROM) removed.
+Unused block "mem_arch/ddr2_read_fifo/BU2/U0/gbiv5.bi/v5_fifo.fblk/full_i1"
+(ROM) removed.
+Unused block "mem_arch/ddr2_read_fifo/GND" (ZERO) removed.
+Unused block "mem_arch/ddr2_read_fifo/VCC" (ONE) removed.
+Unused block "mem_arch/ddr2_write_fifo/BU2/U0/gbiv5.bi/v5_fifo.fblk/empty_i1"
+(ROM) removed.
+Unused block "mem_arch/ddr2_write_fifo/GND" (ZERO) removed.
+Unused block "mem_arch/ddr2_write_fifo/VCC" (ONE) removed.
+Unused block "mem_arch/icache/cache_data/GND" (ZERO) removed.
+Unused block "mem_arch/icache/cache_data/VCC" (ONE) removed.
+Unused block "mem_arch/icache/cache_data2/GND" (ZERO) removed.
+Unused block "mem_arch/icache/cache_data2/VCC" (ONE) removed.
+Unused block "mem_arch/icache/cache_tag/GND" (ZERO) removed.
+Unused block "mem_arch/icache/cache_tag/VCC" (ONE) removed.
+Unused block "mem_arch/icache/cache_tag2/GND" (ZERO) removed.
+Unused block "mem_arch/icache/cache_tag2/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		CPU/Bmem/BU2/XST_GND
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		mem_arch/dcache/cache_data/BU2/XST_GND
+VCC 		mem_arch/dcache/cache_data/BU2/XST_VCC
+GND 		mem_arch/dcache/cache_data2/BU2/XST_GND
+VCC 		mem_arch/dcache/cache_data2/BU2/XST_VCC
+GND 		mem_arch/dcache/cache_tag/BU2/XST_GND
+GND 		mem_arch/dcache/cache_tag2/BU2/XST_GND
+GND 		mem_arch/ddr2_addr_fifo/BU2/XST_GND
+VCC 		mem_arch/ddr2_addr_fifo/BU2/XST_VCC
+GND 		mem_arch/ddr2_read_fifo/BU2/XST_GND
+VCC 		mem_arch/ddr2_read_fifo/BU2/XST_VCC
+GND 		mem_arch/ddr2_write_fifo/BU2/XST_GND
+VCC 		mem_arch/ddr2_write_fifo/BU2/XST_VCC
+GND 		mem_arch/icache/cache_data/BU2/XST_GND
+VCC 		mem_arch/icache/cache_data/BU2/XST_VCC
+GND 		mem_arch/icache/cache_data2/BU2/XST_GND
+VCC 		mem_arch/icache/cache_data2/BU2/XST_VCC
+GND 		mem_arch/icache/cache_tag/BU2/XST_GND
+GND 		mem_arch/icache/cache_tag2/BU2/XST_GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DDR2_A<0>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<1>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<2>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<3>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<4>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<5>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<6>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<7>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<8>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<9>                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<10>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<11>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_A<12>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_BA<0>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_BA<1>                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_CAS_B                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_CKE                           | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_CLK_N<0>                      | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | ODDR         |          |          |
+| DDR2_CLK_N<1>                      | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | ODDR         |          |          |
+| DDR2_CLK_P<0>                      | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | ODDR         |          |          |
+| DDR2_CLK_P<1>                      | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | ODDR         |          |          |
+| DDR2_CS_B                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_D<0>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<1>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<2>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<3>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<4>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<5>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<6>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<7>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<8>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<9>                          | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<10>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<11>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<12>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<13>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<14>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<15>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<16>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<17>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<18>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<19>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<20>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<21>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<22>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<23>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<24>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<25>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<26>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<27>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<28>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<29>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<30>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<31>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<32>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<33>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<34>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<35>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<36>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<37>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<38>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<39>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<40>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<41>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<42>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<43>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<44>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<45>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<46>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<47>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<48>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<49>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<50>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<51>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<52>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<53>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<54>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<55>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<56>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<57>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<58>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<59>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<60>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<61>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<62>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_D<63>                         | IOB              | BIDIR     | SSTL18_II_DCI        |       |          |      | IDDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TDDR         |          |          |
+| DDR2_DM<0>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DM<1>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DM<2>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DM<3>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DM<4>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DM<5>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DM<6>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DM<7>                         | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      | ODDR         |          |          |
+| DDR2_DQS_N<0>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_N<1>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_N<2>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_N<3>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_N<4>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_N<5>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_N<6>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_N<7>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<0>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<1>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<2>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<3>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<4>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<5>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<6>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_DQS_P<7>                      | IOB              | BIDIR     | DIFF_SSTL18_II_DCI   |       |          |      | ODDR         |          | VARIABLE |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| DDR2_ODT                           | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_RAS_B                         | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| DDR2_WE_B                          | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OFF          |          |          |
+| FPGA_SERIAL_RX                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| FPGA_SERIAL_TX                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| GPIO_LED<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GPIO_LED<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GPIO_LED<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GPIO_LED<3>                        | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      |              |          |          |
+| GPIO_LED<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GPIO_LED<5>                        | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      |              |          |          |
+| GPIO_LED<6>                        | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      |              |          |          |
+| GPIO_LED<7>                        | IOB              | OUTPUT    | SSTL18_II_DCI        |       |          |      |              |          |          |
+| GPIO_SW_C                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| GPIO_SW_S                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USER_CLK                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

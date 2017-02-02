@@ -1,0 +1,7 @@
+INFILE=/home/cc/cs150/fa14/class/cs150-av/Desktop/SA/hardware/build/ml505top/ml505top.ncd
+OUTFILE=/home/cc/cs150/fa14/class/cs150-av/Desktop/SA/hardware/build/ml505top/ml505top.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-1ff1136
+WORKINGDIR=/home/cc/cs150/fa14/class/cs150-av/Desktop/SA/hardware/build/ml505top
+LICENSE=ISE
+USER_INFO=210785086_1777494455_210590972_200

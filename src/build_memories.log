@@ -1,0 +1,811 @@
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/cor
+egen.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/cor
+egen.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/bios_mem.edn ./tmp/_cg/bios_mem_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/bios_mem.edn" "tmp/_cg/bios_mem.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bios_mem.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tm
+p/_cg/bios_mem.ngo" ...
+Loading design module "./tmp/_cg/bios_mem_blk_mem_gen_v4_3_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bios_mem_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/bios_mem_unobf.blc"...
+
+NGCBUILD done.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: bios_mem.xco
+XMDF file found: bios_mem_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tm
+p/_cg/bios_mem.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tm
+p/_cg/bios_mem.ngc" device information matches project device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem
+   /tmp/_cg/bios_mem.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.veo -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/blk_mem_gen_readme.txt -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/bios_mem"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_b
+lk_ram/coregen.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_b
+lk_ram/coregen.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/cache_data_blk_ram.edn
+./tmp/_cg/cache_data_blk_ram_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/cache_data_blk_ram.edn"
+"tmp/_cg/cache_data_blk_ram.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/cache_data_blk_ram.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_
+blk_ram/tmp/_cg/cache_data_blk_ram.ngo" ...
+Loading design module
+"./tmp/_cg/cache_data_blk_ram_blk_mem_gen_v4_3_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/cache_data_blk_ram_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/cache_data_blk_ram_unobf.blc"...
+
+NGCBUILD done.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: cache_data_blk_ram.xco
+XMDF file found: cache_data_blk_ram_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_b
+lk_ram/tmp/_cg/blk_mem_gen_readme.txt -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_b
+lk_ram/tmp/_cg/cache_data_blk_ram.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_b
+lk_ram/tmp/_cg/cache_data_blk_ram.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_
+blk_ram/tmp/_cg/cache_data_blk_ram.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_
+blk_ram/tmp/_cg/cache_data_blk_ram.ngc" device information matches project
+device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_b
+lk_ram/tmp/_cg/cache_data_blk_ram.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_da
+   ta_blk_ram/tmp/_cg/cache_data_blk_ram.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_data_b
+lk_ram/tmp/_cg/cache_data_blk_ram.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/cache_data_blk_ram"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_bl
+k_ram/coregen.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_bl
+k_ram/coregen.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/cache_tag_blk_ram.edn
+./tmp/_cg/cache_tag_blk_ram_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/cache_tag_blk_ram.edn"
+"tmp/_cg/cache_tag_blk_ram.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/cache_tag_blk_ram.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_b
+lk_ram/tmp/_cg/cache_tag_blk_ram.ngo" ...
+Loading design module
+"./tmp/_cg/cache_tag_blk_ram_blk_mem_gen_v4_3_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/cache_tag_blk_ram_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/cache_tag_blk_ram_unobf.blc"...
+
+NGCBUILD done.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: cache_tag_blk_ram.xco
+XMDF file found: cache_tag_blk_ram_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_bl
+k_ram/tmp/_cg/blk_mem_gen_readme.txt -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_bl
+k_ram/tmp/_cg/cache_tag_blk_ram.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_bl
+k_ram/tmp/_cg/cache_tag_blk_ram.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_b
+lk_ram/tmp/_cg/cache_tag_blk_ram.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_b
+lk_ram/tmp/_cg/cache_tag_blk_ram.ngc" device information matches project device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_bl
+k_ram/tmp/_cg/cache_tag_blk_ram.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_ta
+   g_blk_ram/tmp/_cg/cache_tag_blk_ram.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/cache_tag_bl
+k_ram/tmp/_cg/cache_tag_blk_ram.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/cache_tag_blk_ram"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/coreg
+en.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/coreg
+en.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/mig_af.edn ./tmp/_cg/mig_af_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/mig_af.edn" "tmp/_cg/mig_af.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/mig_af.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/
+_cg/mig_af.ngo" ...
+Loading design module "./tmp/_cg/mig_af_fifo_generator_v6_2_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/mig_af_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/mig_af_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: mig_af.xco
+XMDF file found: mig_af_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/_
+cg/fifo_generator_readme.txt -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/_
+cg/mig_af.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/_
+cg/mig_af.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/
+_cg/mig_af.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/
+_cg/mig_af.ngc" device information matches project device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/_
+cg/mig_af.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/t
+   mp/_cg/mig_af.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_af/tmp/_
+cg/mig_af.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/mig_af"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/core
+gen.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/core
+gen.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/mig_rdf.edn ./tmp/_cg/mig_rdf_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/mig_rdf.edn" "tmp/_cg/mig_rdf.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/mig_rdf.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp
+/_cg/mig_rdf.ngo" ...
+Loading design module "./tmp/_cg/mig_rdf_fifo_generator_v6_2_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/mig_rdf_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/mig_rdf_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: mig_rdf.xco
+XMDF file found: mig_rdf_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp/
+_cg/fifo_generator_readme.txt -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp/
+_cg/mig_rdf.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp/
+_cg/mig_rdf.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp
+/_cg/mig_rdf.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp
+/_cg/mig_rdf.ngc" device information matches project device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp/
+_cg/mig_rdf.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/
+   tmp/_cg/mig_rdf.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_rdf/tmp/
+_cg/mig_rdf.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/mig_rdf"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/core
+gen.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/core
+gen.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/mig_wdf.edn ./tmp/_cg/mig_wdf_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/mig_wdf.edn" "tmp/_cg/mig_wdf.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/mig_wdf.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp
+/_cg/mig_wdf.ngo" ...
+Loading design module "./tmp/_cg/mig_wdf_fifo_generator_v6_2_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/mig_wdf_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/mig_wdf_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: mig_wdf.xco
+XMDF file found: mig_wdf_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp/
+_cg/fifo_generator_readme.txt -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp/
+_cg/mig_wdf.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp/
+_cg/mig_wdf.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp
+/_cg/mig_wdf.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp
+/_cg/mig_wdf.ngc" device information matches project device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp/
+_cg/mig_wdf.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/
+   tmp/_cg/mig_wdf.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/mig_wdf/tmp/
+_cg/mig_wdf.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/mig_wdf"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/cor
+egen.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/cor
+egen.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/bios_mem.edn ./tmp/_cg/bios_mem_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/bios_mem.edn" "tmp/_cg/bios_mem.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bios_mem.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tm
+p/_cg/bios_mem.ngo" ...
+Loading design module "./tmp/_cg/bios_mem_blk_mem_gen_v4_3_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bios_mem_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/bios_mem_unobf.blc"...
+
+NGCBUILD done.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: bios_mem.xco
+XMDF file found: bios_mem_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tm
+p/_cg/bios_mem.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tm
+p/_cg/bios_mem.ngc" device information matches project device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem
+   /tmp/_cg/bios_mem.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/bios_mem.veo -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/bios_mem/tmp
+/_cg/blk_mem_gen_readme.txt -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/bios_mem"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/c
+oregen.log
+Saved CGP file for project 'coregen'.
+Saved CGP file for project 'coregen'.
+Release 14.6 - Xilinx CORE Generator P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/c
+oregen.log
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -intstyle
+ise -dd ./tmp/_cg/ ./tmp/_cg/pixel_fifo.edn ./tmp/_cg/pixel_fifo_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/pixel_fifo.edn" "tmp/_cg/pixel_fifo.ngo"
+Release 14.6 - edif2ngd P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 14.6 edif2ngd P.68d (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/pixel_fifo.ngo"...
+Reading NGO file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/
+tmp/_cg/pixel_fifo.ngo" ...
+Loading design module "./tmp/_cg/pixel_fifo_fifo_generator_v7_2_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/pixel_fifo_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  6 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "./tmp/_cg/pixel_fifo_unobf.blc"...
+
+NGCBUILD done.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+XCO file found: pixel_fifo.xco
+XMDF file found: pixel_fifo_xmdf.tcl
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/t
+mp/_cg/fifo_generator_readme.txt -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/t
+mp/_cg/pixel_fifo.asy -view all -origin_type imported
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/t
+mp/_cg/pixel_fifo.ngc -view all -origin_type created
+Checking file
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/
+tmp/_cg/pixel_fifo.ngc" for project device match ...
+File
+"/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/
+tmp/_cg/pixel_fifo.ngc" device information matches project device.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/t
+mp/_cg/pixel_fifo.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fi
+   fo/tmp/_cg/pixel_fifo.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+/home/cc/cs150/fa14/class/cs150-et/Desktop/fa14_team25/hardware/src/pixel_fifo/t
+mp/_cg/pixel_fifo.veo -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/pixel_fifo"
+Generating README file...
+Generating FLIST file...
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
